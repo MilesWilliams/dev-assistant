@@ -1,0 +1,100 @@
+html {
+    background-color: #0B101E;
+
+    body {
+        margin: 0;
+    }
+}
+
+.search-container {
+    padding: 0 25px;
+    display: grid;
+    grid-template-columns: 7% 80% 7%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #0B101E;
+    .icon-lockup {
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    input {
+        all: unset;
+        border: none;
+        background-color: #0B101E;
+        color: #fff;
+        font: {
+            size: 20px;
+            weight: 300;
+            family: "Open Sans"
+        }
+        line-height: 60px;
+        height: 60px;
+        width: 81%;
+        margin-top: -4px;
+
+        &::-webkit-input-placeholder {
+            color: #fff;
+            font: {
+                size: 20px;
+                weight: 300;
+                family: "Open Sans"
+            }
+        }
+    }
+
+    #api-logo {
+        display: flex;
+        align-items: center;
+
+        svg {
+            width: 40px;
+        }
+    }
+}
+
+.search-results {
+    color: #fff;
+    margin-top: 55px;
+
+    ul {
+        overflow: scroll;
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            box-sizing: border-box;
+            // padding: 1rem 0.5rem;
+            border-bottom: 1px solid rgba($color: #ffff, $alpha: 0.4);
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+            a {
+                text-decoration: none;
+                width: 100%;
+                display: flex;
+                line-height: 52px;
+                padding: 0 0.5rem;
+            }
+            span {
+                color: #fff;
+                text-transform: capitalize;
+                font: {
+                    size: 14px;
+                    weight: 300;
+                    family: "Open Sans"
+                }
+            }
+        }
+    }
+}

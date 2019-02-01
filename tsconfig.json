@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "baseUrl": ".",
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        },
+        "target": "es5",
+        "lib": [
+            "es2015.promise",
+            "dom",
+            "es7"
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "target": "es2016"
+}

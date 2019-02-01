@@ -1,0 +1,23 @@
+{
+  "name": "search",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "start": "sass ./src/assets/styles/styles.scss ./dist/styles.css && npm run build && electron ./dist/main.js"
+  },
+  "author": "Miles Williams",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "4.0.2",
+    "electron-reload": "^1.4.0",
+    "tslint": "^5.12.1",
+    "typescript": "^3.2.4"
+  },
+  "dependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "rxjs": "^6.3.3"
+  }
+}
